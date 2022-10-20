@@ -18,15 +18,56 @@
     <title>Register</title>
   </head>
   <body>
-    <section class="login d-flex">
-      <div class="login-left w-50 h-100">
-        <div class="col-8">
-          <img src="./img/register_cat.png" alt="" />
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo_sereal.png" alt="" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
+              <li class="nav-item">
+                <a class="nav-link fancy-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">Class</a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link fancy-link" href="#">About</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <ul class="navbar-nav gap-1 gap-md-4 mx">
+              <li class="nav-item">
+                <a class="nav-link reg fancy-link" href="#">Register</a>
+              </li>
+              <button class="btn btn-main-color">Login</button>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+    <section class="login d-flex">
+      <div class="login-left w-75 h-100 align-content-center d-none d-md-block">
+            <div class="col-10 ">
+                <img src="./img/register_cat.png" alt="" />
+            </div>
       </div>
-      <div class="login-right w-50 h-100">
+      <div class="login-right d-flex w-75  h-100 m-auto">
         <div class="col-12">
-          <div class="login-header text-center">
+          <div class="login-header text-center ">
             <h1>Buat Akun Sereal</h1>
           </div>
           <form action="" class="login-form">
@@ -76,7 +117,7 @@
                 alt="sereal-google-login"
                 height="30px"
               />
-              Continue with google
+              Continue with Google
             </button>
           </form>
         </div>
