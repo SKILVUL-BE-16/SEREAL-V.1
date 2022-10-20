@@ -18,14 +18,68 @@
     <title>Login</title>
   </head>
   <body>
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo_sereal.png" alt="" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
+              <li class="nav-item">
+                <a class="nav-link fancy-link" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">Class</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">About</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <ul class="navbar-nav gap-1 gap-md-4 mx">
+              <li class="nav-item">
+                <a class="nav-link reg fancy-link" href="./register.html">Register</a>
+              </li>
+              <a href="./login.html">
+                <button class="btn btn-main-color">Login</button>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- LOGIN FORM -->
     <section class="login d-flex">
-      <div class="login-img">
+      <div class="login-img w-100 h-100 d-none d-md-block">
         <div class="col-10">
           <img class="w-100" src="./img/login_cat.png" alt="" />
         </div>
       </div>
-      <div class="login-right w-50 h-100">
-        <div class="col-10">
+      <div class="login-right d-flex w-100 h-100">
+        <div class="col-12">
           <div class="login-header text-center">
             <h1>Selamat Datang</h1>
             <p id="error">Email atau Password salah!</p>
@@ -64,7 +118,14 @@
       </div>
     </section>
 
+    
     <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custome JS -->
     <script
       src="form.js"
     ></script>
