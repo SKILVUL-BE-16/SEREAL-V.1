@@ -44,6 +44,16 @@
   padding: 0;
 }
 
+#error{
+  background-color: rgb(250, 125, 125);
+  width: 80%;
+  padding: 10px;
+  margin: 5px auto 10px;
+  border-radius: 10px;
+  color: rgb(102, 5, 5);
+  display: none;
+}
+
 .login {
   height: 100vh;
 
