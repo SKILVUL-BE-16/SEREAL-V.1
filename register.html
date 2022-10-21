@@ -13,7 +13,7 @@
     />
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <title>Register</title>
   </head>
@@ -39,7 +39,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
               <li class="nav-item">
-                <a class="nav-link fancy-link" aria-current="page" href="#"
+                <a
+                  class="nav-link fancy-link"
+                  aria-current="page"
+                  href="home.html"
                   >Home</a
                 >
               </li>
@@ -60,7 +63,9 @@
             </form> -->
             <ul class="navbar-nav gap-1 gap-md-4 mx">
               <li class="nav-item">
-                <a class="nav-link reg fancy-link" href="./register.html">Register</a>
+                <a class="nav-link reg fancy-link" href="./register.html"
+                  >Register</a
+                >
               </li>
               <a href="./login.html">
                 <button class="btn btn-main-color">Login</button>
@@ -74,16 +79,20 @@
     <!-- REGISTER FORM -->
     <section class="login d-flex">
       <div class="login-left w-100 h-100 d-none d-md-block">
-            <div class="col-10 ">
-                <img  src="./img/register_cat.png" alt="" />
-            </div>
+        <div class="col-10">
+          <img src="./img/register_cat.png" alt="" />
+        </div>
       </div>
-      <div class="login-right d-flex w-100  h-100 m-auto">
+      <div class="login-right d-flex w-100 h-100 m-auto">
         <div class="col-12">
-          <div class="login-header text-center ">
+          <div class="login-header text-center">
             <h1>Buat Akun Sereal</h1>
           </div>
-          <form action="JavaScript:void(0)" onsubmit="signUp();" class="login-form">
+          <form
+            action="JavaScript:void(0)"
+            onsubmit="signUp();"
+            class="login-form"
+          >
             <label for="fullname" class="form-label">Full Name</label>
             <input
               type="text"
@@ -119,9 +128,10 @@
               <a href=""><span>Terms of Service</span></a> dan
               <a href="#"><span>Privacy Policy</span></a>
             </p>
-            <input type="submit" value="Daftar" class="signin">
+            <input type="submit" value="Daftar" class="signin" />
             <p class="text-center">
-              Already have an account? <a href="login.html"><span>Login</span></a>
+              Already have an account?
+              <a href="login.html"><span>Login</span></a>
             </p>
             <p class="text-center">atau</p>
             <button class="signin-google">
@@ -138,9 +148,7 @@
     </section>
 
     <!-- Cstom JS -->
-    <script
-      src="form.js"
-    ></script>
+    <script src="/js/form.js"></script>
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

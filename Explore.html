@@ -13,7 +13,7 @@
     />
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Explore</title>
   </head>
   <body>
@@ -38,7 +38,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
               <li class="nav-item">
-                <a class="nav-link fancy-link" aria-current="page" href="#"
+                <a
+                  class="nav-link fancy-link"
+                  aria-current="page"
+                  href="home.html"
                   >Home</a
                 >
               </li>
@@ -59,7 +62,9 @@
             </form> -->
             <ul class="navbar-nav gap-1 gap-md-4 mx">
               <li class="nav-item">
-                <a class="nav-link reg fancy-link" href="./register.html">Register</a>
+                <a class="nav-link reg fancy-link" href="./register.html"
+                  >Register</a
+                >
               </li>
               <a href="./login.html">
                 <button class="btn btn-main-color">Login</button>
@@ -73,45 +78,104 @@
     <!-- EXPLORE START -->
     <!-- Banner/ Carousel -->
     <section class="row">
-      
       <div
-          id="carouselExampleInterval"
-          class="carousel slide col-centered"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-caption my-md-5">
-                <h1>Explore Kelas</h1>
-                <p>Ikuti dan pelajari kelas yang ada di Sereal</p>
-              </div>
-              <img src="./img/bg-explore.jpg" class="d-block w-100" alt="..." />
+        id="carouselExampleInterval"
+        class="carousel slide col-centered"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption my-md-5">
+              <h1>Explore Kelas</h1>
+              <p>Ikuti dan pelajari kelas yang ada di Sereal</p>
             </div>
+            <img src="./img/bg-explore.jpg" class="d-block w-100" alt="..." />
           </div>
+        </div>
       </div>
-      <div class="col-10">
-      </div>
+      <div class="col-10"></div>
     </section>
     <!-- Banner/ Carousel End -->
     <!-- Categories -->
     <section class="tab-container my-4">
-      <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
+      <ul
+        class="nav nav-pills mb-3 justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
         <li class="nav-item" role="presentation">
-          <button class="nav-link main-color active" id="pills-all" onclick="getDataKelas()" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Semua Kelas</button>
+          <button
+            class="nav-link main-color active"
+            id="pills-all"
+            onclick="getDataKelas()"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            Semua Kelas
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link main-color" id="pills-melukis" onclick="getMelukisKelas()" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" >Melukis</button>
+          <button
+            class="nav-link main-color"
+            id="pills-melukis"
+            onclick="getMelukisKelas()"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-disabled"
+            type="button"
+            role="tab"
+            aria-controls="pills-disabled"
+            aria-selected="false"
+          >
+            Melukis
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link main-color" id="pills-digital" onclick="getDigitalKelas()" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Digital Art</button>
+          <button
+            class="nav-link main-color"
+            id="pills-digital"
+            onclick="getDigitalKelas()"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            Digital Art
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link main-color" id="pills-teater" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Teater</button>
+          <button
+            class="nav-link main-color"
+            id="pills-teater"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Teater
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link main-color" id="pills-menari" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" >Menari</button>
+          <button
+            class="nav-link main-color"
+            id="pills-menari"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-disabled"
+            type="button"
+            role="tab"
+            aria-controls="pills-disabled"
+            aria-selected="false"
+          >
+            Menari
+          </button>
         </li>
-      
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <!-- <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
@@ -122,15 +186,13 @@
     </section>
     <!-- Categories END -->
     <!-- CARD -->
-    <div class="d-flex flex-column col-centered col-11 " id="card-container">
-      <div class="row row-cols-1 row-cols-lg-2 mb-1" id="dua-kolom-kelas">
-      </div>
-
+    <div class="d-flex flex-column col-centered col-11" id="card-container">
+      <div class="row row-cols-1 row-cols-lg-2 mb-1" id="dua-kolom-kelas"></div>
     </div>
     <!-- CARD END -->
     <!-- EXPLORE END -->
     <!-- CUSTOM JS -->
-    <script src="./explore.js"></script>
+    <script src="js/explore.js"></script>
 
     <!-- BOOTSTRAP JS -->
     <script
