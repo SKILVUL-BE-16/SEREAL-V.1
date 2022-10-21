@@ -128,8 +128,6 @@
 }
 /* REGISTER END */
 
-
-
 /* NAVBAR START */
 .btn-main-color {
   background-color: var(--main-color);
@@ -187,5 +185,16 @@ a.nav-link:hover{
   margin-right: auto;
   margin-left: auto;
 }
-
 /* EXPLORE END */
+
+.overlay p {
+  color: white;
+}
+
+.overlay h3 {
+  color: var(--main-color);
+}
+
+footer p, h6 {
+  color: var(--main-color);
+}
