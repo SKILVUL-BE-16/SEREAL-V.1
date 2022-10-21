@@ -43,7 +43,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">Class</a>
+                <a class="nav-link fancy-link" href="Explore.html">Class</a>
               </li>
 
               <li class="nav-item">
@@ -81,11 +81,11 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="carousel-caption my-5">
+              <div class="carousel-caption my-md-5">
                 <h1>Explore Kelas</h1>
                 <p>Ikuti dan pelajari kelas yang ada di Sereal</p>
               </div>
-              <img src="./img/bg-explore.jpg" class="d-block h-100" alt="..." />
+              <img src="./img/bg-explore.jpg" class="d-block w-100" alt="..." />
             </div>
           </div>
       </div>
@@ -97,57 +97,35 @@
     <section class="tab-container my-4">
       <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Semua Kelas</button>
+          <button class="nav-link main-color active" id="pills-all" onclick="getDataKelas()" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Semua Kelas</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Digital Art</button>
+          <button class="nav-link main-color" id="pills-melukis" onclick="getMelukisKelas()" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" >Melukis</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Teater</button>
+          <button class="nav-link main-color" id="pills-digital" onclick="getDigitalKelas()" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Digital Art</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" >Menari</button>
+          <button class="nav-link main-color" id="pills-teater" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Teater</button>
         </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link main-color" id="pills-menari" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" >Menari</button>
+        </li>
+      
       </ul>
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+        <!-- <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div> -->
       </div>
     </section>
     <!-- Categories END -->
     <!-- CARD -->
-    <!-- <div class="d-flex flex-column col-centered col-11 " id="card-container">
-        
-    </div> -->
-    <div class="row row-cols-1 row-cols-lg-2 mb-1" id="dua-kolom-kelas">
-      <div class="col">
-        <div class="card flex-row ">
-          <img src="img/kelas/2680409 1.jpg" height="100%" class="col-centered" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="d-flex justify-content-between">
-              <a href="">Level: Pemula</a>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
+    <div class="d-flex flex-column col-centered col-11 " id="card-container">
+      <div class="row row-cols-1 row-cols-lg-2 mb-1" id="dua-kolom-kelas">
       </div>
-      <div class="col">
-          <div class="card flex-row ">
-            <img src="img/kelas/2680409 1.jpg" height="100%" class="col-centered" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="d-flex justify-content-between">
-                <a href="">Level: Pemula</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-      </div>
+
     </div>
     <!-- CARD END -->
     <!-- EXPLORE END -->
