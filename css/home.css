@@ -169,23 +169,76 @@ a.nav-link{
 a.nav-link:hover{
   color: var(--main-color);
 }
-/* NAVBAR END */
-/* EXPLORE START */
-.carousel-caption h1{
-  color: var(--main-color);
-  /* font-size: var(--biggest-font-size); */
-  font-weight: var(--font-semibold);
+
+
+
+
+/* Section Home */
+
+/* tagline */
+section .row .tagline {
+  padding: 22vmin 5vmin;
 }
-.carousel-caption p{
-  color: var(--main-color);
-  /* font-size: var(--biggest-font-size); */
+
+/* kitten image */
+section .row .col-md-5 {
+  padding: 5vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+section .row .col-md-5 img {
+  width: 90%;
+}
+
+/* test media query */
+@media (max-width: 765px){
+  .tagline {
+    text-align: center;
+  }
+  .tagline h1 {
+    line-height: 1.6;
+  }
+}
+
+
+.tagline span {
+  background-color: var(--secondary-color);
+  padding: 0px 10px;
+  border-radius: 0px 20px 0px 20px;
+  color: var(--bg-color);
+}
+
+.tagline .btn-join {
+  background-color: var(--main-color);
+  color: var(--bg-color);
   font-weight: var(--font-medium);
 }
 
-.col-centered {
-  float: none;
-  margin-right: auto;
-  margin-left: auto;
+.tagline .btn-join:hover {
+  color: black;
 }
 
-/* EXPLORE END */
+/* Section Team */
+
+.section-2 .container h1 {
+  font-size: 6vmin;
+}
+
+.section-2 .team {
+  padding: 1vmin 1vmin;
+}
+
+.section-2 .card {
+  width: 20em;
+  margin-top: 10vmin;
+}
+
+.section-2 .card .card-text {
+  padding: 0.5em 1.2em;
+  font-size: 0.9em;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
