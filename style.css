@@ -171,12 +171,10 @@ a.nav-link:hover{
 /* EXPLORE START */
 .carousel-caption h1{
   color: var(--main-color);
-  /* font-size: var(--biggest-font-size); */
   font-weight: var(--font-semibold);
 }
 .carousel-caption p{
   color: var(--main-color);
-  /* font-size: var(--biggest-font-size); */
   font-weight: var(--font-medium);
 }
 
