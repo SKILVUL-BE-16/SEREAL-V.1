@@ -11,7 +11,6 @@ function signUp() {
     setTimeout(function () {
         location = 'login.html'
     }, 1000)
-
 };
 
 function login() {

@@ -62,7 +62,7 @@
 
 .login-left img {
   width: auto;
-  height: 100vh;
+  height: 90vh;
   /* width: 50vw; */
   margin: auto 50px;
 }
@@ -128,8 +128,6 @@
 }
 /* REGISTER END */
 
-
-
 /* NAVBAR START */
 .btn-main-color {
   background-color: var(--main-color);
@@ -173,12 +171,10 @@ a.nav-link:hover{
 /* EXPLORE START */
 .carousel-caption h1{
   color: var(--main-color);
-  /* font-size: var(--biggest-font-size); */
   font-weight: var(--font-semibold);
 }
 .carousel-caption p{
   color: var(--main-color);
-  /* font-size: var(--biggest-font-size); */
   font-weight: var(--font-medium);
 }
 
@@ -188,4 +184,149 @@ a.nav-link:hover{
   margin-left: auto;
 }
 
+#card-button{
+  background-color: var(--main-color);
+  border: none;
+}
+
+
 /* EXPLORE END */
+
+.overlay p {
+  color: white;
+}
+
+.overlay h3 {
+  color: var(--main-color);
+}
+
+footer p, h6 {
+  color: var(--main-color);
+}
+
+
+
+/* carousel */
+.main-image {
+  position: relative;
+  background-image: url(/img/image\ 16.png);
+  background-repeat: no-repeat center;
+  background-size: cover;
+  height: 350px;
+  overflow: hidden;
+}
+
+.con-text h1{
+  margin-top: 8vmin;
+  font-size: 7vmin;
+  font-weight: bold;
+  color: var(--main-color);
+  display: block;
+}
+.con-text p {
+  text-align: center;
+}
+
+/* list */
+.container .row {
+  border-radius: 3px;
+  background-color: whitesmoke;
+  box-shadow: 0px 2px 15px 0px rgb(0, 0, 0, 0.2);
+}
+
+.test-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #163660;
+  border-radius: 50%;
+  
+}
+
+section .ex-seni h2{
+  color :var(--main-color);
+  font-size: 1.5em;
+  font-weight: var(--font-semibold);
+}
+
+section .container img {
+  height: 90%;
+}
+
+
+#space-here {
+  height: 1000px;
+  width: 100%;
+  background-color: red;
+}
+
+
+
+/* Section Home */
+
+/* tagline */
+section .row .tagline {
+  padding: 22vmin 5vmin;
+}
+
+/* kitten image */
+section .row .col-md-5 {
+  padding: 5vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+section .row .col-md-5 img {
+  width: 90%;
+}
+
+/* test media query */
+@media (max-width: 765px){
+  .tagline {
+    text-align: center;
+  }
+  .tagline h1 {
+    line-height: 1.6;
+  }
+}
+
+
+.tagline span {
+  background-color: var(--secondary-color);
+  padding: 0px 10px;
+  border-radius: 0px 20px 0px 20px;
+  color: var(--bg-color);
+}
+
+.tagline .btn-join {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  font-weight: var(--font-medium);
+}
+
+.tagline .btn-join:hover {
+  color: black;
+}
+
+/* Section Team */
+
+.section-2 .container h1 {
+  font-size: 6vmin;
+}
+
+.section-2 .team {
+  padding: 1vmin 1vmin;
+}
+
+.section-2 .card {
+  width: 20em;
+  margin-top: 10vmin;
+}
+
+.section-2 .card .card-text {
+  padding: 0.5em 1.2em;
+  font-size: 0.9em;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
