@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Sereal</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo_sereal.png" alt="" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
+              <li class="nav-item">
+                <a class="nav-link fancy-link" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">Class</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">About</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <ul class="navbar-nav gap-1 gap-md-4 mx">
+              <li class="nav-item">
+                <a class="nav-link reg fancy-link" href="./register.html"
+                  >Register</a
+                >
+              </li>
+              <a href="./login.html">
+                <button class="btn btn-main-color">Login</button>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Section 1-->
+    <section class="section-1">
+      <!-- banner -->
+      <div class="container text-start">
+        <div class="row">
+          <div class="tagline col-md-7 col-sm-12">
+            <h1>KEMBANGKAN TALENTA <span>SENIMU</span> BERSAMA SEREAL</h1>
+            <p>
+              Belajar digital art, melukis, menari, musik, dan teater kini tidak
+              lagi susah. Terutama untuk kalian kaum plajar yang ingin
+              mengembangkan talentanya.
+            </p>
+            <a href="login.html" class="btn btn-join px-3 py-2 my-3"
+              >Gabung Sereal</a
+            >
+          </div>
+          <div class="col-md-5 col-sm-12 h-25%">
+            <img src="img/login_cat.png" alt="kitten" />
+            <!-- style="width: 500px; height: 500px" -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="section-2">
+      <div class="container text-center">
+        <h1 class="text-dark">Feedback from users</h1>
+        <p class="text-secondary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <!-- Cards -->
+        <div class="team row">
+          <div class="col-md-4 col-12 text-center">
+            <!-- first -->
+            <div class="card me-2 d-inline-block shadow-lg">
+              <div class="card-img-top">
+                <img
+                  src="img/UI-face-3.jpg"
+                  alt="members"
+                  class="img-fluid border-radius p-4"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Ucup Surucup</h3>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                  velit quod, qui quo eum esse, quisquam quasi nesciunt veniam
+                  praesentium fugit magni architecto neque deserunt optio, ab
+                  accusamus assumenda obcaecati ex animi expedita iusto! Sed
+                  magnam vero culpa nihil atque!
+                </p>
+                <p class="text-black-50">CEO at Serum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- card with carousel -->
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-interval="10000"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <!-- second card -->
+                  <div class="card d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                      <img
+                        src="img/UI-face-1.jpg"
+                        alt="members"
+                        class="img-fluid rounded-circle w-50 p-4"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">James</h3>
+                      <p class="card-text text-secondary">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Hic velit quod, qui quo eum esse, quisquam quasi
+                        nesciunt veniam praesentium fugit magni architecto neque
+                        deserunt optio, ab accusamus assumenda obcaecati ex
+                        animi expedita iusto! Sed magnam vero culpa nihil atque!
+                      </p>
+                      <p class="text-black-50">CEO at Serum</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- third card -->
+                  <div class="card d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                      <img
+                        src="img/UI-face-2.jpg"
+                        alt="members"
+                        class="img-fluid rounded-circle w-50 p-4"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">Sarif</h3>
+                      <p class="card-text text-secondary">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Hic velit quod, qui quo eum esse, quisquam quasi
+                        nesciunt veniam praesentium fugit magni architecto neque
+                        deserunt optio, ab accusamus assumenda obcaecati ex
+                        animi expedita iusto! Sed magnam vero culpa nihil atque!
+                      </p>
+
+                      <p class="text-black-50">CEO at Serum</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- first -->
+            <div class="card d-inline-block shadow-lg">
+              <div class="card-img-top">
+                <img
+                  src="img/UI-face-4.jpg"
+                  alt="members"
+                  class="img-fluid border-radius p-4"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Angeline</h3>
+                <p class="card-text text-secondary">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                  velit quod, qui quo eum esse, quisquam quasi nesciunt veniam
+                  praesentium fugit magni architecto neque deserunt optio, ab
+                  accusamus assumenda obcaecati ex animi expedita iusto! Sed
+                  magnam vero culpa nihil atque!
+                </p>
+                <p class="text-black-50">CEO at Serum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
