@@ -14,7 +14,7 @@ let displayCardKelas = (item) => {
           <p class="card-text">${item.desc}</p>
           <div class="d-flex justify-content-between">
             <a href="">${item.level}</a>
-            <a href="#" class="btn btn-primary">Lihat Kelas</a>
+            <a href="#" class="btn btn-primary" id="card-button">Lihat Kelas</a>
           </div>
         </div>
       </div>
@@ -26,7 +26,6 @@ const getDataKelas = async () => {
     let res = await fetch(api_link_kelas);
     let kelas_array = await res.json();
     let cards = "";
-
     kelas_array.forEach(item => {
         cards += displayCardKelas(item);
         dua_kolom_kelas.innerHTML = cards
@@ -35,3 +34,38 @@ const getDataKelas = async () => {
 }
 getDataKelas()
 
+const getMelukisKelas = async () => {
+  let res = await fetch(api_link_kelas);
+  let kelas_array = await res.json();
+  let cards = "";
+  let melukis = []
+  
+  kelas_array.forEach( (item) => {
+    if (item.cat.includes("Melukis")){
+      melukis.push(item)
+      console.log(melukis)
+    }
+  });
+  melukis.forEach( (item) => {
+    cards += displayCardKelas(item)
+    dua_kolom_kelas.innerHTML = cards
+  });
+}
+
+const getDigitalKelas = async () => {
+  let res = await fetch(api_link_kelas);
+  let kelas_array = await res.json();
+  let cards = "";
+  let digital = []
+  
+  kelas_array.forEach( (item) => {
+    if (item.cat.includes("Digital-art")){
+      digital.push(item)
+      console.log(digital)
+    }
+  });
+  digital.forEach((item) => {
+    cards += displayCardKelas(item)
+    dua_kolom_kelas.innerHTML = cards
+  });
+}
