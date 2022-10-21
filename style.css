@@ -185,6 +185,13 @@ a.nav-link:hover{
   margin-right: auto;
   margin-left: auto;
 }
+
+#card-button{
+  background-color: var(--main-color);
+  border: none;
+}
+
+
 /* EXPLORE END */
 
 .overlay p {
