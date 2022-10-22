@@ -30,7 +30,6 @@ const getDataKelas = async () => {
         cards += displayCardKelas(item);
         dua_kolom_kelas.innerHTML = cards
     });
-    console.table(kelas_array)
 }
 getDataKelas()
 
@@ -43,7 +42,6 @@ const getMelukisKelas = async () => {
   kelas_array.forEach( (item) => {
     if (item.cat.includes("Melukis")){
       melukis.push(item)
-      console.log(melukis)
     }
   });
   melukis.forEach( (item) => {
@@ -61,7 +59,6 @@ const getDigitalKelas = async () => {
   kelas_array.forEach( (item) => {
     if (item.cat.includes("Digital-art")){
       digital.push(item)
-      console.log(digital)
     }
   });
   digital.forEach((item) => {

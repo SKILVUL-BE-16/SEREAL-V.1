@@ -234,7 +234,7 @@ section .ex-seni h2{
 
   }
 
-  .row p {
+  .row .text-comment {
     font-size: 0.7em;
     padding: 0 20px;
   }
@@ -252,25 +252,16 @@ section .ex-seni h2{
 
 
 /* carousel */
-.carousel-item {
+/* .carousel-item {
   height: 20rem;
-}
+} */
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* @media (max-width: 576px) {
-  .navigasi {
-    display: none;
-  }
-}
-@media (min-width: 576px) {
-  .hide-icon {
-    display: none;
-  }
-} 
+
 
 .box {
   height: 100px;
