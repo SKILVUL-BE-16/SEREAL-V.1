@@ -213,13 +213,65 @@ section .ex-seni h2{
   font-weight: var(--font-semibold);
 }
 
-section .container img {
-  height: 90%;
+.banner {
+  width: 100%;
+  /* height: 100%; */
+  /* object-fit: cover; */
 }
-
 
 #space-here {
   height: 1000px;
   width: 100%;
   background-color: red;
+}
+
+@media (max-width: 576px){
+
+  .row h1 {
+    line-height: 1em;
+    font-size: 1.7em;
+    padding: 0 20px;
+
+  }
+
+  .row p {
+    font-size: 0.7em;
+    padding: 0 20px;
+  }
+}
+
+.btn-join {
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
+  font-weight: var(--font-medium);
+}
+.btn-join:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+
+/* carousel */
+.carousel-item {
+  height: 20rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* @media (max-width: 576px) {
+  .navigasi {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .hide-icon {
+    display: none;
+  }
+} */
+
+.box {
+  height: 100px;
 }

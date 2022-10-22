@@ -6,7 +6,7 @@ let api_link_kelas = 'https://63492926a59874146b18c2bb.mockapi.io/tes/Kelas'
 
 let displayCardKelas = (item) => {
   return `
-    <div class="col">
+    <div class="col my-3">
       <div class="card flex-row ">
         <img src="${item.img}" height="100%" class="col-centered" alt="...">
         <div class="card-body">
