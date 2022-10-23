@@ -171,7 +171,7 @@ a.nav-link:hover{
 }
 
 
-/* carousel */
+/* banner */
 .main-image {
   position: relative;
   background-image: url(/img/image\ 16.png);
@@ -219,11 +219,6 @@ section .ex-seni h2{
   /* object-fit: cover; */
 }
 
-#space-here {
-  height: 1000px;
-  width: 100%;
-  background-color: red;
-}
 
 @media (max-width: 576px){
 
@@ -251,18 +246,8 @@ section .ex-seni h2{
 }
 
 
-/* carousel */
-/* .carousel-item {
-  height: 20rem;
-} */
-img {
+.container img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
-}
-
-
-
-.box {
-  height: 100px;
 }

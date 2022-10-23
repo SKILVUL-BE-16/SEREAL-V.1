@@ -85,40 +85,103 @@
     <!-- list class -->
 
     <section>
-    <div class="ex-seni text-center my-5">
-      <h2>Explore Pilihan Seni Sesuai Minat mu</h2>
-    </div>
-    <nav >
-      <div class="d-none d-md-flex nav nav-tabs justify-content-center my-5" id="nav-tab" role="tablist">
-        <button id="btn-melukis" class="nav-link active" data-bs-toggle="tab" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Melukis</button>
-        <button id="btn-digital-art"class="nav-link" data-bs-toggle="tab" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Digital Art</button>
-        <button id="btn-teater"class="nav-link" data-bs-toggle="tab" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Teater</button>
-        <button id="btn-menari"class="nav-link" data-bs-toggle="tab" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Menari</button>
+      <div class="ex-seni text-center my-5">
+        <h2>Explore Pilihan Seni Sesuai Minat mu</h2>
       </div>
-    </nav>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-      <!-- from js -->
-       
+      <nav>
+        <div
+          class="d-none d-md-flex nav nav-tabs justify-content-center my-5"
+          id="nav-tab"
+          role="tablist"
+        >
+          <button
+            id="btn-melukis"
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Melukis
+          </button>
+          <button
+            id="btn-digital-art"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Digital Art
+          </button>
+          <button
+            id="btn-teater"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Teater
+          </button>
+          <button
+            id="btn-menari"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Menari
+          </button>
         </div>
+      </nav>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-interval="false"
+      >
+        <div class="container">
+          <div class="carousel-inner">
+            <!-- get data from api -->
+          </div>
+
+        </div>
+
+        <button
+          class="d-sm-none carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="d-sm-none carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="d-sm-none carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="d-sm-none carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-  <div class="box"></div>
+    </section>
+    <!-- <div class="box"></div> -->
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
