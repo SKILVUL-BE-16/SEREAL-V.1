@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sereal | Home</title>
+    
     <!-- BOOTSTRAP CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -14,7 +15,7 @@
     />
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/second.css" />
+    <link rel="stylesheet" href="css/style-home.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -38,19 +39,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
               <li class="nav-item">
-                <a class="nav-link fancy-link" aria-current="page" href="#"
+                <a class="nav-link fancy-link" aria-current="page" href="home.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">Class</a>
+                <a class="nav-link fancy-link" href="Explore.html">Class</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">Gallery</a>
+                <a class="nav-link fancy-link" href="galery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">About</a>
+                <a class="nav-link fancy-link" href="about.html">About</a>
               </li>
             </ul>
             <!-- <form class="d-flex" role="search">
@@ -62,28 +63,28 @@
         </div>
       </nav>
     </header>
-
-    <!-- banner -->
+    <!-- NAVBAR END-->
+    <!-- Banner -->
     <section>
       <div class="main-image">
         <div class="row">
-          <div class="con-text col-md-12 text-center col-sm-12 my-5">
+          <div class="con-text col-md-12 text-center col-sm-12 my-5 d-block">
             <h1>KEMBANGKAN TALENTA <span>SENIMU</span> BERSAMA SEREAL</h1>
-            <p class="text-comment">
+            <p>
               Belajar digital art, melukis, menari, musik, dan teater kini tidak
               lagi susah. Terutama untuk kalian kaum plajar yang ingin
               mengembangkan talentanya.
             </p>
-            <a href="Explore.html" class="btn btn-join px-3 my-3"
+            <a href="Explore.html" class="btn btn-explore px-3 my-3"
               >Explore Kelas</a
             >
           </div>
         </div>
       </div>
     </section>
+    <!-- Banner End-->
 
-    <!-- list class -->
-
+    <!-- General Class -->
     <section>
       <div class="ex-seni text-center my-5">
         <h2>Explore Pilihan Seni Sesuai Minat mu</h2>
@@ -167,8 +168,7 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <img src="img/right-arrow.png" alt="" class="rotate-img">
         </button>
         <button
           class="d-sm-none carousel-control-next"
@@ -176,12 +176,12 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <img src="img/right-arrow.png" alt="">
         </button>
       </div>
     </section>
-    <!-- <div class="box"></div> -->
+    <!-- General Class End-->
+  
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -189,6 +189,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Custome JS -->
-    <script src="/js/kelas.js"></script>
+    <script src="/js/general_class.js"></script>
   </body>
 </html>

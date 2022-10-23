@@ -208,15 +208,18 @@ section .row .col-md-5 img {
   color: var(--bg-color);
 }
 
+/* button join START*/
 .tagline .btn-join {
-  background-color: var(--main-color);
-  color: var(--bg-color);
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
   font-weight: var(--font-medium);
 }
-
 .tagline .btn-join:hover {
-  color: black;
+  background-color: var(--main-color);
+  color: var(--bg-color);
 }
+/* button join END*/
+
 
 /* Section Team */
 

@@ -186,25 +186,12 @@ a.nav-link:hover{
   font-size: 7vmin;
   font-weight: bold;
   color: var(--main-color);
-  display: block;
-}
-.con-text p {
-  text-align: center;
 }
 
-/* list */
-.container .row {
-  border-radius: 3px;
+ .container{
+  border-radius: 20px;
   background-color: whitesmoke;
   box-shadow: 0px 2px 15px 0px rgb(0, 0, 0, 0.2);
-}
-
-.test-circle {
-  width: 50px;
-  height: 50px;
-  background-color: #163660;
-  border-radius: 50%;
-  
 }
 
 section .ex-seni h2{
@@ -213,41 +200,44 @@ section .ex-seni h2{
   font-weight: var(--font-semibold);
 }
 
-.banner {
-  width: 100%;
-  /* height: 100%; */
-  /* object-fit: cover; */
-}
-
-
+/* for mobile tagline START */
 @media (max-width: 576px){
 
   .row h1 {
     line-height: 1em;
     font-size: 1.7em;
     padding: 0 20px;
-
   }
-
   .row .text-comment {
     font-size: 0.7em;
     padding: 0 20px;
   }
 }
+/* for mobile tagline END */
 
-.btn-join {
+
+/* button expoler START*/
+.btn-explore {
   border: solid 1px var(--main-color);
   color: var(--main-color);
   font-weight: var(--font-medium);
 }
-.btn-join:hover {
+.btn-explore:hover {
   background-color: var(--main-color);
   color: var(--bg-color);
 }
+/* button expoler END*/
 
 
+/* Image for General class START*/
 .container img {
   width: 100%;
   height: 90%;
   object-fit: cover;
 }
+
+.rotate-img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+/* Image for General class END */
