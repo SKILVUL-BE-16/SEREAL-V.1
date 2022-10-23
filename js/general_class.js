@@ -8,10 +8,11 @@ const getApi = async () => {
   let res = await fetch(API);
     let object = await res.json();
     let carousel_item = ``;
-    console.info(object)
     object.forEach(element => carousel_item += displayClass(element));
     getInnerCarousel.innerHTML = carousel_item;
     console.info(getInnerCarousel);
+
+    // add "active" to the first class name "carousel-item"
     const addActive = document.getElementsByClassName("carousel-item")[0];
     addActive.classList.add("active");
 }
