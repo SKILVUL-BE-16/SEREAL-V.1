@@ -19,7 +19,7 @@ function login() {
     let b = JSON.parse(localStorage.getItem("Regist_Account"));
     if (email === b.email && password === b.password) {
         setTimeout(function () {
-            location = 'home.html'
+            location = 'index.html'
         }, 1000)
     }
     else {
