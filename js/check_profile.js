@@ -1,13 +1,13 @@
 // check if register
 const getCheckProfile = document.getElementById("check-profile");
-const getDivButtonHere = document.querySelector(".button-here");
+// const getDivButtonHere = document.querySelector(".button-here");
 
 if (localStorage.getItem("Regist_Account") === null){
     getCheckProfile.innerHTML = addButtonLoginRegister();
-    getDivButtonHere.innerHTML = addButton();
+    // getDivButtonHere.innerHTML = addButton();
     }else{
     getCheckProfile.innerHTML = replaceButtonLoginRegisterToProfile();
-    getDivButtonHere.innerHTML = replaceButton();
+    // getDivButtonHere.innerHTML = replaceButton();
 }
 
 
@@ -27,10 +27,10 @@ function replaceButtonLoginRegisterToProfile(){
 
 
 // function add button 
-function addButton(){
-    return `<a href="login.html" class="btn btn-join px-3 py-2 my-3">Gabung Sereal</a>`;
-}
+// function addButton(){
+//     return `<a href="login.html" class="btn btn-join px-3 py-2 my-3">Gabung Sereal</a>`;
+// }
 
-function replaceButton(){
-    return `<a href="kelas.html" class="btn btn-join px-3 py-2 my-3">Lihat Kelas</a>`;
-}
+// function replaceButton(){
+//     return `<a href="kelas.html" class="btn btn-join px-3 py-2 my-3">Lihat Kelas</a>`;
+// }
