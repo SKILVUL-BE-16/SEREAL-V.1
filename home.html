@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sereal | Home</title>
-    
+
     <!-- BOOTSTRAP CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -15,6 +15,7 @@
     />
 
     <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style-profile.css">
     <link rel="stylesheet" href="css/style-home.css" />
   </head>
   <body>
@@ -39,7 +40,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
               <li class="nav-item">
-                <a class="nav-link fancy-link" aria-current="page" href="home.html"
+                <a
+                  class="nav-link fancy-link"
+                  aria-current="page"
+                  href="home.html"
                   >Home</a
                 >
               </li>
@@ -48,17 +52,17 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="galery.html">Gallery</a>
+                <a class="nav-link fancy-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fancy-link" href="about.html">About</a>
               </li>
             </ul>
+            <div id="check-profile"></div>
             <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form> -->
-            <div id="check-profile"></div>
           </div>
         </div>
       </nav>
@@ -69,10 +73,12 @@
       <div class="main-image">
         <div class="row">
           <div class="con-text col-md-12 text-center col-sm-12 my-5 d-block">
-            <h1>KEMBANGKAN TALENTA <span>SENIMU</span> BERSAMA SEREAL</h1>
+            <h1 id="#try-move">
+              KEMBANGKAN TALENTA <span>SENIMU</span> BERSAMA SEREAL
+            </h1>
             <p>
               Belajar digital art, melukis, menari, musik, dan teater kini tidak
-              lagi susah. Terutama untuk kalian kaum plajar yang ingin
+              lagi susah. Terutama untuk kalian kaum pelajar yang ingin
               mengembangkan talentanya.
             </p>
             <a href="Explore.html" class="btn btn-explore px-3 my-3"
@@ -159,7 +165,6 @@
           <div class="carousel-inner">
             <!-- get data from api -->
           </div>
-
         </div>
 
         <button
@@ -168,7 +173,7 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-        <img src="img/right-arrow.png" alt="" class="rotate-img">
+          <img src="img/right-arrow.png" alt="" class="rotate-img" />
         </button>
         <button
           class="d-sm-none carousel-control-next"
@@ -176,12 +181,12 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-        <img src="img/right-arrow.png" alt="">
+          <img src="img/right-arrow.png" alt="" />
         </button>
       </div>
     </section>
     <!-- General Class End-->
-  
+
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -190,5 +195,6 @@
     ></script>
     <!-- Custome JS -->
     <script src="/js/general_class.js"></script>
+    <script src="js/check_profile.js"></script>
   </body>
 </html>

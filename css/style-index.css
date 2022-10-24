@@ -180,6 +180,10 @@ section .row .tagline {
   padding: 22vmin 5vmin;
 }
 
+section h1 {
+  font-weight: bold;
+}
+
 /* kitten image */
 section .row .col-md-5 {
   padding: 5vmin 1vmin;
@@ -245,3 +249,5 @@ section .row .col-md-5 img {
   border-radius: 340px;
   width: 60%;
 }
+
+

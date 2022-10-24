@@ -241,3 +241,12 @@ section .ex-seni h2{
   transform: scaleX(-1);
 }
 /* Image for General class END */
+
+
+/* .my-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../img/profile.jpg);
+  background-size: cover;
+} */
