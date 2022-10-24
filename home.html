@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sereal | Home</title>
+
     <!-- BOOTSTRAP CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -14,7 +15,8 @@
     />
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/second.css" />
+    <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="stylesheet" href="css/style-home.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -38,76 +40,152 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
               <li class="nav-item">
-                <a class="nav-link fancy-link" aria-current="page" href="#"
+                <a
+                  class="nav-link fancy-link"
+                  aria-current="page"
+                  href="home.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">Class</a>
+                <a class="nav-link fancy-link" href="Explore.html">Class</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">Gallery</a>
+                <a class="nav-link fancy-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">About</a>
+                <a class="nav-link fancy-link" href="about.html">About</a>
               </li>
             </ul>
+            <div id="check-profile"></div>
             <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form> -->
-            <div id="check-profile"></div>
           </div>
         </div>
       </nav>
     </header>
-
-    <!-- banner -->
+    <!-- NAVBAR END-->
+    <!-- Banner -->
     <section>
       <div class="main-image">
         <div class="row">
-          <div class="con-text col-md-12 text-center col-sm-12 my-5">
-            <h1>KEMBANGKAN TALENTA <span>SENIMU</span> BERSAMA SEREAL</h1>
+          <div class="con-text col-md-12 text-center col-sm-12 my-5 d-block">
+            <h1 id="#try-move">
+              KEMBANGKAN TALENTA <span>SENIMU</span> BERSAMA SEREAL
+            </h1>
             <p>
               Belajar digital art, melukis, menari, musik, dan teater kini tidak
-              lagi susah. Terutama untuk kalian kaum plajar yang ingin
+              lagi susah. Terutama untuk kalian kaum pelajar yang ingin
               mengembangkan talentanya.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- list class -->
-    <section>
-      <div class="container my-5">
-        <div class="ex-seni text-center my-5">
-          <h2>Explore Pilihan Seni Sesuai Minat mu</h2>
-        </div>
-        <div class="row g-0 position-relative">
-          <div class="col-md-6 mb-md-0 p-md-4">
-            <img src="img/image 17.png" class="w-100" alt="..." />
-          </div>
-          <div class="col-md-6 p-4 ps-md-0">
-            <h5 class="mt-3 fw-bold">Columns with stretched link</h5>
-            <p class="text-secondary">
-              Another instance of placeholder content for this other custom
-              component. It is intended to mimic what some real-world content
-              would look like, and we're using it here to give the component a
-              bit of body and size.
-            </p>
-            <a href="#" class="text-decoration-none"
-              >Cari tahu lebih lanjut >></a
+            <a href="Explore.html" class="btn btn-explore px-3 my-3"
+              >Explore Kelas</a
             >
           </div>
         </div>
       </div>
     </section>
-    <div id="space-here"></div>
+    <!-- Banner End-->
 
-    <!-- <div class="testcircle"></div> -->
-    <!-- end list class -->
+    <!-- General Class -->
+    <section>
+      <div class="ex-seni text-center my-5">
+        <h2>Explore Pilihan Seni Sesuai Minat mu</h2>
+      </div>
+      <nav>
+        <div
+          class="d-none d-md-flex nav nav-tabs justify-content-center my-5"
+          id="nav-tab"
+          role="tablist"
+        >
+          <button
+            id="btn-melukis"
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Melukis
+          </button>
+          <button
+            id="btn-digital-art"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Digital Art
+          </button>
+          <button
+            id="btn-teater"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Teater
+          </button>
+          <button
+            id="btn-menari"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Menari
+          </button>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-interval="false"
+      >
+        <div class="container">
+          <div class="carousel-inner">
+            <!-- get data from api -->
+          </div>
+        </div>
+
+        <button
+          class="d-sm-none carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <img src="img/right-arrow.png" alt="" class="rotate-img" />
+        </button>
+        <button
+          class="d-sm-none carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <img src="img/right-arrow.png" alt="" />
+        </button>
+      </div>
+    </section>
+    <!-- General Class End-->
 
     <!-- BOOTSTRAP JS -->
     <script
@@ -116,6 +194,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Custome JS -->
-    <script src="/js/form.js"></script>
+    <script src="/js/general_class.js"></script>
+    <script src="js/check_profile.js"></script>
   </body>
 </html>

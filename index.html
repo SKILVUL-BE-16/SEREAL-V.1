@@ -13,7 +13,8 @@
     />
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="stylesheet" href="css/style-index.css" />
     <title>Sereal</title>
   </head>
   <body>
@@ -38,26 +39,29 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
               <li class="nav-item">
-                <a class="nav-link fancy-link" aria-current="page" href="#"
+                <a
+                  class="nav-link fancy-link"
+                  aria-current="page"
+                  href="home.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">Class</a>
+                <a class="nav-link fancy-link" href="Explore.html">Class</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">Gallery</a>
+                <a class="nav-link fancy-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fancy-link" href="#">About</a>
+                <a class="nav-link fancy-link" href="about.html">About</a>
               </li>
             </ul>
             <!-- <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form> -->
-            <ul class="navbar-nav gap-1 gap-md-4 mx">
+            <!-- <ul class="navbar-nav gap-1 gap-md-4 mx">
               <li class="nav-item">
                 <a class="nav-link reg fancy-link" href="./register.html"
                   >Register</a
@@ -66,12 +70,12 @@
               <a href="./login.html">
                 <button class="btn btn-main-color">Login</button>
               </a>
-            </ul>
+            </ul> -->
+            <div id="check-profile"></div>
           </div>
         </div>
       </nav>
     </header>
-
     <!-- Section 1-->
     <section class="section-1">
       <!-- banner -->
@@ -81,7 +85,7 @@
             <h1>KEMBANGKAN TALENTA <span>SENIMU</span> BERSAMA SEREAL</h1>
             <p>
               Belajar digital art, melukis, menari, musik, dan teater kini tidak
-              lagi susah. Terutama untuk kalian kaum plajar yang ingin
+              lagi susah. Terutama untuk kalian kaum pelajar yang ingin
               mengembangkan talentanya.
             </p>
             <a href="login.html" class="btn btn-join px-3 py-2 my-3"
@@ -89,7 +93,7 @@
             >
           </div>
           <div class="col-md-5 col-sm-12 h-25%">
-            <img src="img/login_cat.png" alt="kitten" />
+            <img src="img/kitten.png" alt="kitten" />
             <!-- style="width: 500px; height: 500px" -->
           </div>
         </div>
@@ -97,11 +101,11 @@
     </section>
 
     <!-- section 2 -->
-    <section class="section-2">
+    <section class="section-2 me-5">
       <div class="container text-center">
         <h1 class="text-dark">Feedback from users</h1>
         <p class="text-secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          We would like your feedback to improve our website 
         </p>
 
         <!-- Cards -->
@@ -117,7 +121,7 @@
                 />
               </div>
               <div class="card-body">
-                <h3 class="card-title">Ucup Surucup</h3>
+                <h3 class="card-title">Uncle Roger</h3>
                 <p class="card-text text-secondary">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
                   velit quod, qui quo eum esse, quisquam quasi nesciunt veniam
@@ -138,53 +142,7 @@
               data-interval="10000"
             >
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <!-- second card -->
-                  <div class="card d-inline-block shadow-lg">
-                    <div class="card-img-top">
-                      <img
-                        src="img/UI-face-1.jpg"
-                        alt="members"
-                        class="img-fluid rounded-circle w-50 p-4"
-                      />
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">James</h3>
-                      <p class="card-text text-secondary">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Hic velit quod, qui quo eum esse, quisquam quasi
-                        nesciunt veniam praesentium fugit magni architecto neque
-                        deserunt optio, ab accusamus assumenda obcaecati ex
-                        animi expedita iusto! Sed magnam vero culpa nihil atque!
-                      </p>
-                      <p class="text-black-50">CEO at Serum</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <!-- third card -->
-                  <div class="card d-inline-block shadow-lg">
-                    <div class="card-img-top">
-                      <img
-                        src="img/UI-face-2.jpg"
-                        alt="members"
-                        class="img-fluid rounded-circle w-50 p-4"
-                      />
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Sarif</h3>
-                      <p class="card-text text-secondary">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Hic velit quod, qui quo eum esse, quisquam quasi
-                        nesciunt veniam praesentium fugit magni architecto neque
-                        deserunt optio, ab accusamus assumenda obcaecati ex
-                        animi expedita iusto! Sed magnam vero culpa nihil atque!
-                      </p>
-
-                      <p class="text-black-50">CEO at Serum</p>
-                    </div>
-                  </div>
-                </div>
+                <!-- get data from api/vi/profile -->
               </div>
             </div>
           </div>
@@ -207,7 +165,7 @@
                   accusamus assumenda obcaecati ex animi expedita iusto! Sed
                   magnam vero culpa nihil atque!
                 </p>
-                <p class="text-black-50">CEO at Serum</p>
+                <p class="text-black-50">Member at Serum</p>
               </div>
             </div>
           </div>
@@ -215,11 +173,126 @@
       </div>
     </section>
 
+    <!-- Footer Start-->
+    <footer class="text-center text-lg-start bg-light text-muted mt-5">
+      <!-- Section: Social media -->
+      <!-- Section: Links  -->
+      <section class="pt-2">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <a class="navbar-brand" href="#">
+                <img src="./img/logo_sereal.png" alt="" height="50" />
+              </a>
+              <p>Cengkareng, Jakarta Barat</p>
+              <p>DKI Jakarta 10270</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">HUBUNGI KAMI</h6>
+              <p><i class="fas fa-phone"></i>+62 821-3456-7891</p>
+              <p><i class="fas fa-envelope"></i>sereal@gmail.com</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Kelas</h6>
+              <p>
+                <a href="#!" class="text-reset">Melukis</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Teater</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Digital Art</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Menari</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Galeri</h6>
+              <p>
+                <a href="#!" class="text-reset">Siswa</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Serrum</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom me-5"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"
+              />
+            </i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-youtube">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png"
+              />
+            </i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"
+              />
+            </i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2021 Copyright: BE-16 INC.
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer END-->
+
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+
+    <!-- costume JS -->
+    <script src="js/comment_response.js"></script>
+    <script src="js/check_profile.js"></script>
   </body>
 </html>

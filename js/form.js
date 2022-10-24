@@ -30,8 +30,10 @@ function login() {
 
 // check if register
 const getCheckProfile = document.getElementById("check-profile");
-const dataStorage = !null;
-if (false){
+
+let getRegistAccount = JSON.parse(localStorage.getItem("Regist_Account"));
+console.info(getRegistAccount);
+if (getRegistAccount.email !== undefined || getRegistAccount.email !== null){
     getCheckProfile.innerHTML = `<div class="test-circle navbar-nav gap-1 gap-md-4 mx"></div>`;
 }else{
     getCheckProfile.innerHTML = 

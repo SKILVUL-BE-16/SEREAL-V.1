@@ -6,7 +6,7 @@ let api_link_kelas = 'https://63492926a59874146b18c2bb.mockapi.io/tes/Kelas'
 
 let displayCardKelas = (item) => {
   return `
-    <div class="col">
+    <div class="col my-3">
       <div class="card flex-row ">
         <img src="${item.img}" height="100%" class="col-centered" alt="...">
         <div class="card-body">
@@ -30,7 +30,6 @@ const getDataKelas = async () => {
         cards += displayCardKelas(item);
         dua_kolom_kelas.innerHTML = cards
     });
-    console.table(kelas_array)
 }
 getDataKelas()
 
@@ -43,7 +42,6 @@ const getMelukisKelas = async () => {
   kelas_array.forEach( (item) => {
     if (item.cat.includes("Melukis")){
       melukis.push(item)
-      console.log(melukis)
     }
   });
   melukis.forEach( (item) => {
@@ -61,7 +59,6 @@ const getDigitalKelas = async () => {
   kelas_array.forEach( (item) => {
     if (item.cat.includes("Digital-art")){
       digital.push(item)
-      console.log(digital)
     }
   });
   digital.forEach((item) => {
