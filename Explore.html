@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Explore</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo_sereal.png" alt="" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link fancy-link"
+                  aria-current="page"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="Explore.html">Class</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="about.html">About</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <div id="check-profile"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- EXPLORE START -->
+    <!-- Banner/ Carousel -->
+    <section class="row">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide col-centered"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption my-md-5">
+              <h1>Explore Kelas</h1>
+              <p>Ikuti dan pelajari kelas yang ada di Sereal</p>
+            </div>
+            <img src="./img/bg-explore.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+      <div class="col-10"></div>
+    </section>
+    <!-- Banner/ Carousel End -->
+    <!-- Categories -->
+    <section class="tab-container my-4">
+      <ul
+        class="nav nav-pills mb-3 justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link main-color active"
+            id="pills-all"
+            onclick="getDataKelas()"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            Semua Kelas
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link nav-main-color"
+            id="pills-melukis"
+            onclick="getMelukisKelas()"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-disabled"
+            type="button"
+            role="tab"
+            aria-controls="pills-disabled"
+            aria-selected="false"
+          >
+            Melukis
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link main-color"
+            id="pills-digital"
+            onclick="getDigitalKelas()"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            Digital Art
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link main-color"
+            id="pills-teater"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Teater
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link main-color"
+            id="pills-menari"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-disabled"
+            type="button"
+            role="tab"
+            aria-controls="pills-disabled"
+            aria-selected="false"
+          >
+            Menari
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <!-- <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div> -->
+      </div>
+    </section>
+    <!-- Categories END -->
+    <!-- CARD -->
+    <div class="d-flex flex-column col-centered col-11" id="card-container">
+      <div class="row row-cols-1 row-cols-lg-2 mb-1" id="dua-kolom-kelas"></div>
+    </div>
+    <!-- CARD END -->
+    <!-- EXPLORE END -->
+    <!-- CUSTOM JS -->
+    <script src="js/explore.js"></script>
+    <script src="js/check_profile.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

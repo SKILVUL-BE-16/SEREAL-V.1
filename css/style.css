@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* COLOR */
+  --main-color: #fb9847;
+  --secondary-color: #163660;
+  --accent-color: #749af1;
+  --bg-color: #f6f6f6;
+
+  /* black 85% alpha */
+  --normal-text-color: #d9000000;
+
+  /* FONT TYPOGRAPHY */
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 1.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --small-text: 0.75rem;
+
+  /* 10px = 0.625rem
+    12px = 0.75rem
+    14px = 0.875rem
+    16px = 1rem (base)
+    18px = 1.125rem
+    20px = 1.25rem
+    24px = 1.5rem
+    30px = 1.875rem
+    32px = 2rem */
+
+  /* FONT WEIGHT */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+
+* {
+  font-family: var(--body-font);
+  /* background-color: #fff; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-main-color{
+  color: var(--main-color);
+}
+
+/* REGISTER START */
+#error{
+  background-color: rgb(250, 125, 125);
+  width: 80%;
+  padding: 10px;
+  margin: 5px auto 10px;
+  border-radius: 10px;
+  color: rgb(102, 5, 5);
+  display: none;
+}
+
+.login {
+  height: 100vh;
+}
+
+.login-left img {
+  width: auto;
+  height: 100vh;
+  /* width: 50vw; */
+  margin: auto 50px;
+}
+
+.login-header h1 {
+  color: var(--main-color);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  line-height: 32px;
+  margin-top: 32px;
+  background-color: inherit;
+}
+
+.login-form {
+  width: 80%;
+  margin: auto;
+  padding: 12px;
+}
+.login-form label {
+  color: #000;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  line-height: 24px;
+  margin-top: 8px;
+  background-color: inherit;
+}
+
+.login-form input {
+  background-color: var(--bg-color);
+}
+.login-form p {
+  font-size: var(--small-text);
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.login-form a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.login-form .signin {
+  width: 100%;
+  padding: 8px;
+
+  color: #fff;
+  background-color: var(--main-color);
+  border: 2px solid;
+  border-radius: 5px;
+  margin-top: 14px;
+  /* margin-bottom: 8px; */
+  font-weight: var(--font-semibold);
+}
+
+.login-form .signin-google {
+  width: 100%;
+  padding: 4px;
+  /* font-size: var(--h3-font-size); */
+  /* background-color: #fff; */
+  border: 2px solid;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-weight: var(--font-medium);
+}
+/* REGISTER END */
+
+
+
+/* NAVBAR START */
+.btn-main-color {
+  background-color: var(--main-color);
+  color: #fff; 
+}
+.btn-main-color:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  opacity: 80%;
+}
+
+a.nav-link.fancy-link {
+  position: relative;
+}
+a.nav-link.fancy-link::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+  background-color: var(--main-color);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out;
+}
+a.nav-link.fancy-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+  color: var(--main-color);
+
+}
+a.nav-link{
+  font-weight: var(--font-medium);
+  color: #2C2A2A;
+}
+a.nav-link:hover{
+  color: var(--main-color);
+}
+/* NAVBAR END */
+/* EXPLORE START */
+.carousel-caption h1{
+  color: var(--main-color);
+  /* font-size: var(--biggest-font-size); */
+  font-weight: var(--font-semibold);
+}
+.carousel-caption p{
+  color: var(--main-color);
+  /* font-size: var(--biggest-font-size); */
+  font-weight: var(--font-medium);
+}
+
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+button.nav-link.nav-link{
+  color: var(--main-color);
+}
+
+button.nav-link.nav-link.active{
+  background-color: var(--main-color);
+  color: #fff; 
+}
+
+button.nav-link.nav-link:hover{
+  background-color: var(--main-color);
+  color: #fff;
+  opacity: 95%;
+}
+
+
+/* EXPLORE END */
+
+
+.overlay p {
+  color: white;
+}
+
+.overlay h3 {
+  color: var(--main-color);
+}
+
+footer p, h6 {
+  color: var(--main-color);
+}
+
+h4 {
+  color: var(--main-color);
+}
+
+.list-materi {
+  background-color: #f6f6f6;;
+}
+
+.list-group a {
+  background-color: #fb9847;
+  border-radius: 5px;
+}

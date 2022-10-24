@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Register</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo_sereal.png" alt="" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-0 mb-md-0 gap-md-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link fancy-link"
+                  aria-current="page"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="Explore.html">Class</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fancy-link" href="#">About</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <div id="check-profile"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- REGISTER FORM -->
+    <section class="login d-flex">
+      <div class="login-left w-100 h-100 d-none d-md-block">
+        <div class="col-10">
+          <img src="./img/register_cat.png" alt="" />
+        </div>
+      </div>
+      <div class="login-right d-flex w-100 h-100 m-auto">
+        <div class="col-12">
+          <div class="login-header text-center">
+            <h1>Buat Akun Sereal</h1>
+          </div>
+          <form
+            action="JavaScript:void(0)"
+            onsubmit="signUp();"
+            class="login-form"
+          >
+            <label for="fullname" class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fullname"
+              placeholder="John Doe"
+            />
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+            />
+            <label for="pass" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="pass"
+              placeholder="*******"
+            />
+            <label for="confirm-pass" class="form-label"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="confirm-pass"
+              placeholder="*******"
+            />
+            <p>
+              Dengan mendaftar, kamu setuju dengan
+              <a href=""><span>Terms of Service</span></a> dan
+              <a href="#"><span>Privacy Policy</span></a>
+            </p>
+            <input type="submit" value="Daftar" class="signin" />
+            <p class="text-center">
+              Already have an account?
+              <a href="login.html"><span>Login</span></a>
+            </p>
+            <p class="text-center">atau</p>
+            <button class="signin-google">
+              <img
+                src="./img/google.png"
+                alt="sereal-google-login"
+                height="30px"
+              />
+              Continue with Google
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cstom JS -->
+    <script src="/js/check_profile.js"></script>
+    <script src="/js/form.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
