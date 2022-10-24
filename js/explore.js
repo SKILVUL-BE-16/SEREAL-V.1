@@ -14,7 +14,7 @@ let displayCardKelas = (item) => {
           <p class="card-text">${item.desc}</p>
           <div class="d-flex justify-content-between">
             <a href="">${item.level}</a>
-            <a href="#" class="btn btn-primary" id="card-button">Lihat Kelas</a>
+            <a href="#" class="btn btn-main-color" id="card-button">Lihat Kelas</a>
           </div>
         </div>
       </div>

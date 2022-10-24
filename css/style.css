@@ -45,6 +45,10 @@
   padding: 0;
 }
 
+.text-main-color{
+  color: var(--main-color);
+}
+
 /* REGISTER START */
 #error{
   background-color: rgb(250, 125, 125);
@@ -187,6 +191,21 @@ a.nav-link:hover{
   margin-right: auto;
   margin-left: auto;
 }
+button.nav-link.nav-link{
+  color: var(--main-color);
+}
+
+button.nav-link.nav-link.active{
+  background-color: var(--main-color);
+  color: #fff; 
+}
+
+button.nav-link.nav-link:hover{
+  background-color: var(--main-color);
+  color: #fff;
+  opacity: 95%;
+}
+
 
 /* EXPLORE END */
 

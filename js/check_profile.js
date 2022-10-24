@@ -10,6 +10,6 @@ if (localStorage.getItem("Regist_Account") === null){
                 <a href="./login.html"><button class="btn btn-main-color">Login</button></a>
         </ul>`;
     }else{
-    getCheckProfile.innerHTML = `<div class="my-profile"></div>`;
+    getCheckProfile.innerHTML = `<a href="#"><div class="my-profile"></div></a>`;
     
 }
