@@ -22,7 +22,7 @@ function addButtonLoginRegister(){
 }
 
 function replaceButtonLoginRegisterToProfile(){
-    return `<div class="my-profile"></div>`;
+    return `<a href="#"><div class="my-profile"></div></a>`;
 }
 
 
